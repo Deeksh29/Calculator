@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" id="a">
+        <div id="calculator">
+            <div id="screen">
+                <input type="text" id="one" readonly>
+            </div>
+            <div id="buttons">
+                <div id="btn-clear" class="button button-light" onclick="document.getElementById('one').value = ''">AC
+                </div>
+                <div id="btn-sign" class="button button-light"
+                    onclick="document.getElementById('one').value = document.getElementById('one').value.slice(0, -1)">C
+                </div>
+                <div id="btn-percent" class="button button-light" onclick="document.getElementById('one').value += '%'">
+                    %</div>
+                <div id="btn-divide" class="button button-orange" onclick="document.getElementById('one').value += '/'">
+                    /</div>
+
+                <div id="btn-7" class="button button-dark" onclick="document.getElementById('one').value += '7'">7</div>
+                <div id="btn-8" class="button button-dark" onclick="document.getElementById('one').value += '8'">8</div>
+                <div id="btn-9" class="button button-dark" onclick="document.getElementById('one').value += '9'">9</div>
+                <div id="btn-multiply" class="button button-orange"
+                    onclick="document.getElementById('one').value += '*'">*</div>
+
+                <div id="btn-4" class="button button-dark" onclick="document.getElementById('one').value += '4'">4</div>
+                <div id="btn-5" class="button button-dark" onclick="document.getElementById('one').value += '5'">5</div>
+                <div id="btn-6" class="button button-dark" onclick="document.getElementById('one').value += '6'">6</div>
+                <div id="btn-subtract" class="button button-orange"
+                    onclick="document.getElementById('one').value += '-'">−</div>
+
+                <div id="btn-1" class="button button-dark" onclick="document.getElementById('one').value += '1'">1</div>
+                <div id="btn-2" class="button button-dark" onclick="document.getElementById('one').value += '2'">2</div>
+                <div id="btn-3" class="button button-dark" onclick="document.getElementById('one').value += '3'">3</div>
+                <div id="btn-add" class="button button-orange" onclick="document.getElementById('one').value += '+'">+
+                </div>
+
+                <div id="btn-0" class="button button-dark button-wide"
+                    onclick="document.getElementById('one').value += '0'">0</div>
+                <div id="btn-decimal" class="button button-dark" onclick="document.getElementById('one').value += '.'">.
+                </div>
+                <div id="btn-equals" class="button button-orange"
+                    onclick="document.getElementById('one').value = eval(document.getElementById('one').value)">=</div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
